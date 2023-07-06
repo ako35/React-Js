@@ -1,0 +1,10 @@
+.external-styling-container {
+    border: 1px solid red;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.external-styling-container ul{
+    list-style-type: none;
+}
