@@ -10,7 +10,8 @@ const InternalStyling = () => {
 
     const styleContent = {
         ...styleTitle,
-        color: 'red'
+        color: 'red',
+        fontSize: '30px',
     }
   return (
     <div>

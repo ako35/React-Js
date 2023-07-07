@@ -1,0 +1,35 @@
+$color-title: red;
+$color-secondary: blue;
+
+.sass-scss{
+    
+    h2{
+        color: $color-title;
+    }
+
+    #heading{
+        font-style: italic;
+    }
+
+    .list{
+        text-align: center;
+        list-style-type: none;
+
+        li{
+            color: $color-title;
+            font-style: italic;
+        }
+    }
+
+    .article1{
+        color: $color-secondary;
+    }
+
+    .article2{
+        color: $color-title;
+    }
+
+    .article3{
+        color: $color-secondary;
+    }
+}
