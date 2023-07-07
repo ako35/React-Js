@@ -7,9 +7,11 @@ const Image = () => {
     }
   return (
     <div>
-        <img src="https://picsum.photos/200" alt="" style={ortakStil} />        
+        <img src="https://picsum.photos/200" alt="" style={ortakStil} />    
+            
         <img src="./image1.jpg" alt="" height={"200px"} style={ortakStil} /> 
         {/* public klasoru icerisindeki index.html dosyasi icindeymis gibi klasor yolu yazilir.  */}
+
         <img src={Korkuluk} alt="" height={"200px"} style={ortakStil} />
         <img src={require('../../assets/img/image3.jpg')} alt="" height={"200px"} style={ortakStil} />
     </div>

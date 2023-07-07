@@ -14,6 +14,8 @@ import Greetings from './components/05-props/01-greetings'
 import Products from './components/05-props/05-products'
 import DijitalSaatUygulamasi2 from './components/06-dijital-saat-uygulamasi2/dijital-saat-uygulamasi2'
 import Image from './components/07-images/01-images'
+import ImageGallery from './components/07-images/02-image-gallery'
+import ProfileCard from './components/08-profile-card/profile-card'
 
 const App = () => {
   return (
@@ -37,6 +39,8 @@ const App = () => {
         </Products>
         <DijitalSaatUygulamasi2 textColor="red" bgColor="yellow" />
         <Image />
+        <ImageGallery />
+        <ProfileCard name="Mehmet" location="Istanbul" />
 
         <br />
         <br />
