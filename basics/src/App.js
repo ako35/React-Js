@@ -20,7 +20,9 @@ import BootstrapKlasikYontem from "./components/09-bootstrap/01-bootstrap-klasik
 import BootstrapModernYontem from "./components/09-bootstrap/02-bootstrap-modern-yontem";
 import ReactIcons from "./components/10-icons/01-react-icons";
 import MaterialIcons from "./components/10-icons/02-material-icons";
-// import'./assets/scss/style.scss';
+import Events from "./components/11-events/events";
+import ProductShop from "./components/12-product-shop/product-shop";
+import'./assets/scss/style.scss';
 
 const profileCardData = {
   name: "Ramazan",
@@ -84,6 +86,8 @@ const App = () => {
       <BootstrapModernYontem />
       <ReactIcons />
       <MaterialIcons />
+      <Events />
+      <ProductShop />
 
       <br />
       <br />
