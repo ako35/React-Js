@@ -23,6 +23,9 @@ import MaterialIcons from "./components/10-icons/02-material-icons";
 import Events from "./components/11-events/events";
 import ProductShop from "./components/12-product-shop/product-shop";
 import'./assets/scss/style.scss';
+import State from "./components/13-usestate/01-state";
+import Counter1 from "./components/14-counter/counter1";
+import Birthday from "./components/15-birthday/birthday";
 
 const profileCardData = {
   name: "Ramazan",
@@ -88,6 +91,9 @@ const App = () => {
       <MaterialIcons />
       <Events />
       <ProductShop />
+      <State />
+      <Counter1 />
+      <Birthday />
 
       <br />
       <br />

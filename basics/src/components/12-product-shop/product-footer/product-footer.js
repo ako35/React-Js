@@ -1,8 +1,11 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const ProductFooter = () => {
   return (
-    <div>ProductFooter</div>
+    <Container className='text-center mt-3'>
+      2023 - Copyright by Techno Shop
+    </Container>
   )
 }
 
