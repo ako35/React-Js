@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Apples, { Bananas1, Orange } from "./components/01-my-house";
 import Jsx1 from "./components/02-jsx/01-jsx";
 import Jsx2 from "./components/02-jsx/02-jsx";
@@ -26,6 +26,8 @@ import'./assets/scss/style.scss';
 import State from "./components/13-usestate/01-state";
 import Counter1 from "./components/14-counter/counter1";
 import Birthday from "./components/15-birthday/birthday";
+import UseEffect from "./components/16-useeffect/useeffect";
+import { Button } from "react-bootstrap";
 
 const profileCardData = {
   name: "Ramazan",
@@ -39,6 +41,8 @@ const profileCardData = {
 }
 
 const App = () => {
+
+  const [showUseEffect, setShowUseEffect] = useState(false);
   return (
     <div>
       <Apples />
@@ -94,6 +98,11 @@ const App = () => {
       <State />
       <Counter1 />
       <Birthday />
+      <UseEffect />
+      <Button onClick={() => setShowUseEffect(prev => !prev)}>
+        use Effect Hook unu Gizle
+      </Button>
+      {showUseEffect && <UseEffect />}
 
       <br />
       <br />

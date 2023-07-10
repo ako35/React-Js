@@ -1,19 +1,30 @@
 import React, { useState } from 'react'
-import { Button, Container } from 'react-bootstrap'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import peopleData from '../../assets/data/people.json'
 import Person from './person'
 
 const Birthday = () => {
-    const [people, setPeople] = useState([])
-    console.log(peopleData)
+    const [people, setPeople] = useState(peopleData)
+    
+    const deletePerson = (id) => {
+        const newPeople = people.filter(person => person.id !== id)
+        setPeople(newPeople)
+    }
   return (
     <Container>
         <h2>Bugun Doganlar</h2>
-        <p>Bugun dogan 10 kisi var</p>
-        {
-            people.map(person => (<Person key={person.id} {...person} />))
-        }
-        <Button variant='danger'>Hepsini Temizle</Button>
+        <p>Bugun dogan {people.length} kisi var</p>
+        <Row>
+            {
+                people.map(person => (
+                    <Col key={person.id} md={6} lg={4} xl={3} >
+                        <Person {...person} deletePerson={deletePerson} />
+                    </Col>
+                ))
+            }
+        </Row>
+        <Button variant='danger' onClick={() => setPeople([])} >Hepsini Temizle</Button>
+        <Button variant='success' onClick={() => setPeople(peopleData)} >Verileri Geri Getir</Button>
     </Container>
   )
 }

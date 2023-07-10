@@ -8,10 +8,7 @@ const Jsx4 = () => {
         return <div key={index}>{name}</div>
     })
 
-    const check = false
-
     console.log(nameInfo)
-    console.log(check)
 
   return (
     <div>
