@@ -34,6 +34,7 @@ import UseRef from "./components/19-useRef/useref";
 import ClassTurundeComponentler from "./components/20-component-turleri/01-class-turunde-componentler";
 import FonksiyonTurundeComponentler from "./components/20-component-turleri/02-fonksiyon-turunde-componentler";
 import Fetch from "./components/21-fetch/01-fetch";
+import Fetch2 from "./components/21-fetch/02-fetch";
 
 const profileCardData = {
   name: "Ramazan",
@@ -115,6 +116,7 @@ const App = () => {
       {showUseEffect && <ClassTurundeComponentler />}
       <FonksiyonTurundeComponentler />
       <Fetch />
+      <Fetch2 />
 
       <br />
       <br />
