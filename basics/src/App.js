@@ -12,7 +12,7 @@ import SassScss from "./components/03-styles/05-sass-scss";
 import DijitalSaatUygulamasi1 from "./components/04-dijital-saat-uygulamasi1/dijital-saat-uygulamasi1";
 import Greetings from "./components/05-props/01-greetings";
 import Products from "./components/05-props/05-products";
-import DijitalSaatUygulamasi2 from "./components/06-dijital-saat-uygulamasi2/dijital-saat-uygulamasi2";
+import DijitalSaatUygulamasi2 from "./components/17-dijital-saat-uygulamasi3/dijital-saat-uygulamasi3";
 import Image from "./components/07-images/01-images";
 import ImageGallery from "./components/07-images/02-image-gallery";
 import ProfileCard from "./components/08-profile-card/profile-card";
@@ -28,6 +28,9 @@ import Counter1 from "./components/14-counter/counter1";
 import Birthday from "./components/15-birthday/birthday";
 import UseEffect from "./components/16-useeffect/useeffect";
 import { Button } from "react-bootstrap";
+import DijitalSaatUygulamasi3 from "./components/17-dijital-saat-uygulamasi3/dijital-saat-uygulamasi3";
+import FilterList from "./components/18-filter-list/filter-list";
+import UseRef from "./components/19-useRef/useref";
 
 const profileCardData = {
   name: "Ramazan",
@@ -103,6 +106,9 @@ const App = () => {
         use Effect Hook unu Gizle
       </Button>
       {showUseEffect && <UseEffect />}
+      {showUseEffect && <DijitalSaatUygulamasi3 textColor="red" bgColor="yellow" />}
+      <FilterList />
+      <UseRef />
 
       <br />
       <br />
