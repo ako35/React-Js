@@ -31,6 +31,9 @@ import { Button } from "react-bootstrap";
 import DijitalSaatUygulamasi3 from "./components/17-dijital-saat-uygulamasi3/dijital-saat-uygulamasi3";
 import FilterList from "./components/18-filter-list/filter-list";
 import UseRef from "./components/19-useRef/useref";
+import ClassTurundeComponentler from "./components/20-component-turleri/01-class-turunde-componentler";
+import FonksiyonTurundeComponentler from "./components/20-component-turleri/02-fonksiyon-turunde-componentler";
+import Fetch from "./components/21-fetch/01-fetch";
 
 const profileCardData = {
   name: "Ramazan",
@@ -109,6 +112,9 @@ const App = () => {
       {showUseEffect && <DijitalSaatUygulamasi3 textColor="red" bgColor="yellow" />}
       <FilterList />
       <UseRef />
+      {showUseEffect && <ClassTurundeComponentler />}
+      <FonksiyonTurundeComponentler />
+      <Fetch />
 
       <br />
       <br />
