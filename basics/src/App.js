@@ -35,6 +35,7 @@ import ClassTurundeComponentler from "./components/20-component-turleri/01-class
 import FonksiyonTurundeComponentler from "./components/20-component-turleri/02-fonksiyon-turunde-componentler";
 import Fetch from "./components/21-fetch/01-fetch";
 import Fetch2 from "./components/21-fetch/02-fetch";
+import Countries from "./components/22-axios/countries";
 
 const profileCardData = {
   name: "Ramazan",
@@ -117,6 +118,7 @@ const App = () => {
       <FonksiyonTurundeComponentler />
       <Fetch />
       <Fetch2 />
+      <Countries />
 
       <br />
       <br />
