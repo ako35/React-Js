@@ -1,0 +1,142 @@
+import React, { useState } from "react";
+import { Button, Container, Form, FormGroup, FormLabel } from "react-bootstrap";
+
+const Form5 = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    gender: "",
+    terms: false,
+  });
+
+  const [errorFormData, setErrorFormData] = useState({
+      firstName: false,
+      lastName: false,
+      email: false,
+      phoneNumber: false,
+      gender: false,
+      terms: false
+  })
+
+  const handleChange = (e) => {
+    const value =
+      e.target.type === "checkbox" ? e.target.checked : e.target.value;
+    setFormData((prev) => ({ ...prev, [e.target.name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    if(!formData.terms) {
+        setErrorFormData(prev => ({...prev, terms: true}));
+        return;
+    }
+
+    if(formData.firstName.length < 3) {
+        alert('Adinizi minimum 3 karakter giriniz!');
+        return;
+    }
+
+    if(/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(formData.email)) {
+        alert('Geçerli bir e-mail adresi giriniz!');
+        return;
+    }
+  };
+  return (
+    <Container>
+      <h2>Form - Manuel Validasyon</h2>
+      <Form onSubmit={handleSubmit}>
+        <FormGroup>
+          <FormLabel>Ad</FormLabel>
+          <Form.Control
+            type="text"
+            placeholder="Adinizi giriniz"
+            value={formData.firstName}
+            onChange={handleChange}
+          />
+        </FormGroup>
+
+        <FormGroup>
+          <FormLabel>Soyad</FormLabel>
+          <Form.Control
+            type="text"
+            placeholder="Soyadinizi giriniz"
+            value={formData.lastName}
+            onChange={handleChange}
+          />
+        </FormGroup>
+
+        <FormGroup>
+          <FormLabel>Email</FormLabel>
+          <Form.Control
+            type="text"
+            placeholder="Emailinizi giriniz"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </FormGroup>
+
+        <FormGroup>
+          <FormLabel>Telefon</FormLabel>
+          <Form.Control
+            type="text"
+            placeholder="Telefonunuzu giriniz"
+            value={formData.phoneNumber}
+            onChange={handleChange}
+          />
+        </FormGroup>
+
+        <FormGroup>
+          <FormLabel>Cinsiyet</FormLabel>
+          <FormGroup>
+            <Form.Check
+              type="radio"
+              label="Erkek"
+              name="gender"
+              value="erkek"
+              onChange={handleChange}
+              inline
+            />
+            <Form.Check
+              type="radio"
+              label="Kadın"
+              name="gender"
+              value="kadın"
+              onChange={handleChange}
+              inline
+            />
+            <Form.Check
+              type="radio"
+              label="Diger"
+              name="gender"
+              value="diger"
+              onChange={handleChange}
+              inline
+            />
+          </FormGroup>
+        </FormGroup>
+
+        <FormGroup>
+          <Form.Check
+            type="checkbox"
+            label="Gizlilik Sözleşmesini okudum"
+            name="terms"
+            checked={formData.terms}
+            onChange={handleChange}
+          />
+          {
+            errorFormData.terms && (
+                <p className="text-danger">*Gizlilik Sözleşmesini kabul etmelisiniz!</p>
+            )
+          }
+        </FormGroup>
+
+        <Button type="submit">Submit</Button>
+      </Form>
+    </Container>
+  );
+};
+
+export default Form5;

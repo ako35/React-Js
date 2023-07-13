@@ -28,7 +28,7 @@ const Countries = () => {
 
     useEffect(() => {
         loadCountriesData()
-    }, [])
+    })
   return (
     <Container>
         <h2>Axios - Countries</h2>

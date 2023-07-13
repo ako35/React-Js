@@ -40,6 +40,9 @@ import ParentComponent from "./components/23-lifting-state-up/01-parent-componen
 import Form1 from "./components/24-forms/01-form";
 import Form2 from "./components/24-forms/02-form";
 import Form3 from "./components/24-forms/03-form";
+import Form4 from "./components/24-forms/04-form";
+import Form5 from "./components/24-forms/05-form";
+import FormikYup1 from "./components/25-formik-yup/01-formik-yup";
 
 const profileCardData = {
   name: "Ramazan",
@@ -127,6 +130,9 @@ const App = () => {
       <Form1 />
       <Form2 />
       <Form3 />
+      <Form4 />
+      <Form5 />
+      <FormikYup1 />
 
       <br />
       <br />
