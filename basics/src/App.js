@@ -43,6 +43,7 @@ import Form3 from "./components/24-forms/03-form";
 import Form4 from "./components/24-forms/04-form";
 import Form5 from "./components/24-forms/05-form";
 import FormikYup1 from "./components/25-formik-yup/01-formik-yup";
+import FormikYup2 from "./components/25-formik-yup/02-formik-yup";
 
 const profileCardData = {
   name: "Ramazan",
@@ -133,6 +134,7 @@ const App = () => {
       <Form4 />
       <Form5 />
       <FormikYup1 />
+      <FormikYup2 />
 
       <br />
       <br />
