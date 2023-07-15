@@ -141,7 +141,7 @@ const FormikYup2 = () => {
             </Form.Control.Feedback>
         </Form.Group>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Submit</button> 
       </Form>
     </Container>
   );
