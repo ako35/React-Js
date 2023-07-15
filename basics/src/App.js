@@ -45,7 +45,9 @@
 // import FormikYup1 from "./components/25-formik-yup/01-formik-yup";
 // import FormikYup2 from "./components/25-formik-yup/02-formik-yup";
 
-import AppRouter from "./router/router";
+// import AppRouter from "./router/router";
+import './assets/scss/style.scss';
+import AppRouter2 from "./router/router2";
 
 // const profileCardData = {
 //   name: "Ramazan",
@@ -151,7 +153,8 @@ import AppRouter from "./router/router";
 export default function App() {
   return (
     <>
-      <AppRouter />
+      {/* <AppRouter /> */}
+      <AppRouter2 />
     </>
   );
 }

@@ -48,6 +48,18 @@ import {
   FormikYup1,
   FormikYup2,
 } from "../components";
+import UserLayout from "../layout/user-layout";
+
+const profileCardData = {
+  firstName: "Ali",
+  location: "Ankara",
+  image: 'person2.jpg',
+  statistics: [
+    { title: 'Likes', stat: 100 },
+    { title: 'Followers', stat: 20 },
+    { title: 'Following', stat: 300 },
+  ]
+}
 
 const AppRouter = () => {
   return (
